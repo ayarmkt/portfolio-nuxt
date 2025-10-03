@@ -2,10 +2,12 @@
 
 <template>
   <section class="h-screen flex flex-col justify-center items-center">
-    <div class="w-2/3 flex flex-col gap-y-4">
-      <Typo tag="h1" variant="title" class="text-center">Aya Takamura</Typo>
-      <Typo tag="p" variant="text" class="text-center">
-        <Typo tag="p" variant="text" class="text-royal-blue font-black">
+    <div class="max-w-4xl w-4/5 md:w-2/3">
+      <Typo tag="h1" variant="title-large" class="text-center pb-4">
+        Aya Takamura
+      </Typo>
+      <Typo tag="p" variant="text-large" class="text-center">
+        <Typo tag="span" variant="text-large" class="!text-blue-700 font-black">
           a Brand Marketer-turned-Front-End Developer
         </Typo>
         who cares about user experience. I am passionate about understanding
