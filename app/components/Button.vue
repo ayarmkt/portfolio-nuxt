@@ -3,6 +3,7 @@ const {
   label,
   link,
   variant = 'outline',
+  size = 'md',
 } = defineProps<{
   // Label
   label: string;
@@ -10,13 +11,18 @@ const {
   link?: string;
   //   Variant
   variant?: keyof typeof variantClass;
+  //   Size
+  size?: 'lg' | 'md';
 }>();
 
 const is = computed(() => (!!link ? resolveComponent('NuxtLink') : 'button'));
 
 const variantClass = {
   outline: {
-    button: 'border border-gray-600',
+    // button: 'border border-blue-700',
+    button:
+      'border border-gray-600 hover:bg-blue-700/30 transition-[background-color] duration-300',
+    // text: '!text-blue-700',
     text: '',
   },
   blue: {
@@ -27,16 +33,24 @@ const variantClass = {
 </script>
 
 <template>
+  <!-- w-full -->
   <component
     :is="is"
     :to="link"
-    class="w-full rounded-full py-1 px-2"
-    :class="variantClass[variant].button"
+    class="rounded-full"
+    :class="[
+      variantClass[variant].button,
+      {
+        'py-1 px-2': size === 'md',
+        'py-1 px-8': size === 'lg',
+      },
+    ]"
   >
+    <!-- flex justify-center -->
     <Typo
       tag="span"
-      variant="text-small"
-      class="text-center flex justify-center"
+      variant="text-xs"
+      class="text-center font-medium"
       :class="variantClass[variant].text"
     >
       {{ label }}
