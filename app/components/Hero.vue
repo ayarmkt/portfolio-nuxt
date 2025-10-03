@@ -6,7 +6,7 @@
       <Typo tag="h1" variant="title-large" class="text-center pb-4">
         Aya Takamura
       </Typo>
-      <Typo tag="p" variant="text-large" class="text-center">
+      <Typo tag="p" variant="text-large" class="text-center pb-4 md:pb-0">
         <Typo tag="span" variant="text-large" class="!text-blue-700 font-black">
           a Brand Marketer-turned-Front-End Developer
         </Typo>
@@ -14,6 +14,7 @@
         customers' needs and I adopt my user-centric mindset to create
         easy-to-use applications.
       </Typo>
+      <Contacts />
     </div>
   </section>
 </template>
