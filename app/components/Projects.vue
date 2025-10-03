@@ -36,30 +36,12 @@ const projects = [
               {{ project.text }}
             </Typo>
             <div class="flex gap-x-2">
-              <NuxtLink
-                :to="project.github"
-                class="w-full rounded-full border border-gray-600 py-1 px-2"
-              >
-                <Typo
-                  tag="span"
-                  variant="text-small"
-                  class="text-center flex justify-center"
-                >
-                  GitHub
-                </Typo>
-              </NuxtLink>
-              <NuxtLink
-                :to="project.demo"
-                class="w-full rounded-full bg-blue-700 py-1 px-2"
-              >
-                <Typo
-                  tag="span"
-                  variant="text-small"
-                  class="text-center text-white flex justify-center"
-                >
-                  Demo
-                </Typo>
-              </NuxtLink>
+              <Button
+                label="GitHub"
+                :link="project.github"
+                variant="outline"
+              ></Button>
+              <Button label="Demo" :link="project.demo" variant="blue"></Button>
             </div>
           </div>
         </li>

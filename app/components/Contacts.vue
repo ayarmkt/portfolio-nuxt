@@ -22,7 +22,10 @@ const links = [
     <ul class="flex justify-center md:flex-col gap-x-4 gap-y-6">
       <li v-for="(link, index) in links" :key="index">
         <NuxtLink :to="link.url" :aria-label="`Go to ${link.label}`">
-          <font-awesome-icon :icon="`fa-brands ${link.class}`" class="fa-2xl" />
+          <font-awesome-icon
+            :icon="`fa-brands ${link.class}`"
+            class="fa-2xl text-gray-600"
+          />
         </NuxtLink>
       </li>
     </ul>
