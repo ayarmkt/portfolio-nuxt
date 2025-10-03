@@ -1,11 +1,14 @@
 <script lang="ts" setup>
 const variantClasses = {
-  title: 'text-5xl md:text-8xl font-black',
-  text: 'text-base md:text-xl text-dark-gray',
-  'text-small': 'text-sm md:text-base text-dark-gray',
-};
+  'title-large': 'text-5xl md:text-8xl font-black',
+  'title-medium': 'text-3xl md:text-4xl font-black',
+  'title-small': 'text-xl font-semibold',
+  'text-large': 'text-lg md:text-xl text-gray-600',
+  'text-medium': 'text-lg text-gray-600',
+  'text-small': 'text-sm md:text-base text-gray-600',
+} as const;
 
-const { tag = 'p', variant = 'text' } = defineProps<{
+const { tag = 'p', variant = 'text-medium' } = defineProps<{
   // Tag name
   tag?: string;
   //   Variant

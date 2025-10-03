@@ -4,10 +4,6 @@
 @theme {
   /* Font family */
   --font-inter: 'Inter', sans-serif;
-
-  /* Color */
-  --color-dark-gray: #615e5e;
-  --color-royal-blue: #264de4;
 }
 
 html {
