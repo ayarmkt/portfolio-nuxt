@@ -4,6 +4,14 @@ import { useDark, useToggle } from '@vueuse/core';
 const isDark = useDark();
 const toggleDark = useToggle(isDark);
 
+watch(
+  () => isDark.value,
+  () => {
+    console.log('isDark', isDark.value);
+  },
+  { immediate: true }
+);
+
 const menuItems = [
   {
     label: 'About me',
@@ -32,13 +40,7 @@ const menuItems = [
         </NuxtLink>
       </li>
 
-      <li>
-        <button @click="toggleDark()">Toggle - {{ isDark }}</button>
-      </li>
-
-      <div class="flex items-center space-x-2">
-        <UiSwitch id="airplane-mode" />
-      </div>
+      <UiSwitch v-model="isDark" id="airplane-mode" />
     </ul>
   </nav>
 </template>
