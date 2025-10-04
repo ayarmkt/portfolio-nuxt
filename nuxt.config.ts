@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@vueuse/nuxt'],
+  modules: ['@vueuse/nuxt', 'shadcn-nuxt'],
   css: [
     '~/assets/css/main.css',
     '@fortawesome/fontawesome-svg-core/styles.css',
