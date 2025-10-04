@@ -31,9 +31,14 @@ const menuItems = [
           <Typo variant="text-small">{{ menu.label }}</Typo>
         </NuxtLink>
       </li>
+
       <li>
         <button @click="toggleDark()">Toggle - {{ isDark }}</button>
       </li>
+
+      <div class="flex items-center space-x-2">
+        <UiSwitch id="airplane-mode" />
+      </div>
     </ul>
   </nav>
 </template>
