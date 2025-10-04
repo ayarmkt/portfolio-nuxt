@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import { useDark, useToggle } from '@vueuse/core';
+
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
+
 const menuItems = [
   {
     label: 'About me',
@@ -25,6 +30,9 @@ const menuItems = [
         <NuxtLink :to="menu.id" class="h-full flex items-center">
           <Typo variant="text-small">{{ menu.label }}</Typo>
         </NuxtLink>
+      </li>
+      <li>
+        <button @click="toggleDark()">Toggle - {{ isDark }}</button>
       </li>
     </ul>
   </nav>
