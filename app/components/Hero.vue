@@ -7,7 +7,7 @@
         Aya Takamura
       </Typo>
       <Typo tag="p" variant="text-large" class="text-center">
-        <Typo tag="span" variant="title-large-blue">
+        <Typo tag="span" variant="text-large-bold-blue">
           a Brand Marketer-turned-Front-End Developer
         </Typo>
         who cares about user experience. I am passionate about understanding
