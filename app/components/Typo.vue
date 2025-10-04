@@ -6,6 +6,7 @@ const variantClasses = {
   'text-large': 'text-lg md:text-xl text-gray-600',
   'text-medium': 'text-lg text-gray-600',
   'text-small': 'text-sm md:text-base text-gray-600',
+  'text-small-white': 'text-sm md:text-base text-white',
   'text-xs': 'text-sm text-gray-600',
 } as const;
 

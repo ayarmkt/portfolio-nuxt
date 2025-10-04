@@ -5,5 +5,6 @@
     <Hero />
     <Introduction />
     <Projects />
+    <Footer />
   </div>
 </template>
