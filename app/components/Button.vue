@@ -30,11 +30,10 @@ const variantClass = {
 </script>
 
 <template>
-  <!-- w-full -->
   <component
     :is="is"
     :to="link"
-    class="rounded-full"
+    class="rounded-full text-center"
     :class="[
       variantClass[variant].button,
       {
@@ -43,7 +42,6 @@ const variantClass = {
       },
     ]"
   >
-    <!-- flex justify-center -->
     <Typo
       tag="span"
       variant="text-xs"

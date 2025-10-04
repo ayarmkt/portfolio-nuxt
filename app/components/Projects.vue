@@ -34,13 +34,19 @@ const projects = [
           <Typo tag="p" variant="text-small" class="text-center">
             {{ project.text }}
           </Typo>
-          <div class="flex gap-x-2">
+          <div class="flex gap-x-2 w-full">
             <Button
               label="GitHub"
               :link="project.github"
               variant="outline"
+              class="w-full"
             ></Button>
-            <Button label="Demo" :link="project.demo" variant="blue"></Button>
+            <Button
+              label="Demo"
+              :link="project.demo"
+              variant="blue"
+              class="w-full"
+            ></Button>
           </div>
         </div>
       </li>
