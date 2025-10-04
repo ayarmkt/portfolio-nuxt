@@ -1,4 +1,17 @@
 <script setup lang="ts">
+import { useDark, useToggle } from '@vueuse/core';
+
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
+
+watch(
+  () => isDark.value,
+  () => {
+    console.log('isDark', isDark.value);
+  },
+  { immediate: true }
+);
+
 const menuItems = [
   {
     label: 'About me',
@@ -26,6 +39,8 @@ const menuItems = [
           <Typo variant="text-small">{{ menu.label }}</Typo>
         </NuxtLink>
       </li>
+
+      <UiSwitch v-model="isDark" id="airplane-mode" />
     </ul>
   </nav>
 </template>
