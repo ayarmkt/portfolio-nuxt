@@ -1,12 +1,12 @@
 <script lang="ts" setup>
 const variantClasses = {
   'title-large': 'text-5xl md:text-8xl font-black',
-  'title-large-blue': 'text-5xl md:text-8xl font-black text-blue-700',
   'title-medium': 'text-3xl md:text-4xl font-black',
+  'title-medium-blue': 'text-3xl md:text-4xl font-black text-blue-700',
   'title-small': 'text-xl font-semibold',
   'text-large': 'text-lg md:text-xl text-gray-600',
+  'text-large-bold-blue': 'text-lg md:text-xl font-black text-blue-700',
   'text-medium': 'text-lg text-gray-600',
-  'text-medium-blue': 'text-lg text-blue-700',
   'text-small': 'text-sm md:text-base text-gray-600',
   'text-small-white': 'text-sm md:text-base text-white',
   'text-xs': 'text-sm text-gray-600',
