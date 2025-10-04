@@ -19,10 +19,7 @@ const is = computed(() => (!!link ? resolveComponent('NuxtLink') : 'button'));
 
 const variantClass = {
   outline: {
-    // button: 'border border-blue-700',
-    button:
-      'border border-gray-600 hover:bg-blue-700/30 transition-[background-color] duration-300',
-    // text: '!text-blue-700',
+    button: 'border border-gray-600',
     text: '',
   },
   blue: {
