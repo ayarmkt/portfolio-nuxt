@@ -15,12 +15,9 @@
         easy-to-use applications.
       </Typo>
       <Contacts />
-      <Button
-        label="View my CV"
-        link="test.com"
-        variant="outline"
-        size="lg"
-      ></Button>
+      <UiButton as-child>
+        <NuxtLink to="test.com">View my CV</NuxtLink>
+      </UiButton>
     </div>
   </section>
 </template>

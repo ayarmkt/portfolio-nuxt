@@ -34,19 +34,13 @@ const projects = [
           <Typo tag="p" variant="text-small" class="text-center">
             {{ project.text }}
           </Typo>
-          <div class="flex gap-x-2 w-full">
-            <Button
-              label="GitHub"
-              :link="project.github"
-              variant="outline"
-              class="w-full"
-            ></Button>
-            <Button
-              label="Demo"
-              :link="project.demo"
-              variant="blue"
-              class="w-full"
-            ></Button>
+          <div class="flex justify-center gap-x-2 w-full">
+            <UiButton as-child>
+              <NuxtLink to="project.github">GitHub</NuxtLink>
+            </UiButton>
+            <UiButton as-child>
+              <NuxtLink to="project.demo">Demo</NuxtLink>
+            </UiButton>
           </div>
         </div>
       </li>
