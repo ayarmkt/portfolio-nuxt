@@ -1,7 +1,7 @@
 <template>
   <div>
     <Hero />
-    <Introduction />
-    <Projects />
+    <Introduction id="about" />
+    <Projects id="projects" />
   </div>
 </template>

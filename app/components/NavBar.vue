@@ -10,7 +10,7 @@ const menuItems = [
   },
   {
     label: 'Resume',
-    id: '#resume',
+    link: 'test.com',
   },
 ];
 </script>
@@ -22,7 +22,10 @@ const menuItems = [
   >
     <ul class="flex gap-x-10 md:gap-x-16">
       <li v-for="(menu, index) in menuItems" :key="index">
-        <NuxtLink :to="menu.id" class="h-full flex items-center">
+        <NuxtLink
+          :to="menu.link || { hash: menu.id }"
+          class="h-full flex items-center"
+        >
           <Typo variant="text-small">{{ menu.label }}</Typo>
         </NuxtLink>
       </li>
