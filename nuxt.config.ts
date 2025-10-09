@@ -5,11 +5,15 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: [
-    '~/assets/css/main.css',
+    '~/assets/css/tailwind.css',
     '@fortawesome/fontawesome-svg-core/styles.css',
   ],
   vite: {
     plugins: [tailwindcss()],
   },
-  modules: ['@vueuse/nuxt'],
+  modules: ['@vueuse/nuxt', 'shadcn-nuxt'],
+  shadcn: {
+    prefix: 'Ui',
+    componentDir: './components/ui',
+  },
 });
