@@ -20,7 +20,7 @@ const tag = resolveComponent('UiNavigationMenuLink');
 <template>
   <!-- TODO: remove backdrop at the top of the page. Add backdrop on scroll -->
   <UiNavigationMenu
-    class="fixed top-0 !items-stretch w-full !max-w-none h-16 bg-white shadow-md backdrop-blur-m"
+    class="fixed top-0 !items-stretch w-full !max-w-none h-16 bg-background shadow-md backdrop-blur-m"
   >
     <UiNavigationMenuList class="h-full gap-x-10 md:gap-x-16">
       <UiNavigationMenuItem
