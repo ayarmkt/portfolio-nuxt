@@ -13,6 +13,9 @@ const projects = [
     demo: 'test.com',
   },
 ];
+
+const titleTag = resolveComponent('UiCardTitle');
+const descTag = resolveComponent('UiCardDescription');
 </script>
 
 <template>
@@ -26,29 +29,31 @@ const projects = [
         :key="index"
         class="shadow-md rounded-2xl overflow-hidden"
       >
-        <div class="bg-gray-500 aspect-video"></div>
-        <div class="px-4 py-6 flex flex-col gap-y-4">
-          <Typo tag="h3" variant="title-small" class="text-center">
-            {{ project.title }}
-          </Typo>
-          <Typo tag="p" variant="text-small" class="text-center">
-            {{ project.text }}
-          </Typo>
-          <div class="flex gap-x-2 w-full">
-            <Button
-              label="GitHub"
-              :link="project.github"
-              variant="outline"
-              class="w-full"
-            ></Button>
-            <Button
-              label="Demo"
-              :link="project.demo"
-              variant="blue"
-              class="w-full"
-            ></Button>
-          </div>
-        </div>
+        <UiCard class="pt-0 overflow-hidden">
+          <!-- TODO: place correct image -->
+          <div class="bg-gray-500 aspect-video"></div>
+
+          <UiCardHeader>
+            <Typo :tag="titleTag" variant="title-small" class="text-center">
+              {{ project.title }}
+            </Typo>
+          </UiCardHeader>
+
+          <UiCardContent>
+            <Typo :tag="descTag" variant="text-small" class="text-center">
+              {{ project.text }}
+            </Typo>
+          </UiCardContent>
+
+          <UiCardFooter class="justify-center gap-x-2">
+            <UiButton as-child>
+              <NuxtLink to="project.github">GitHub</NuxtLink>
+            </UiButton>
+            <UiButton as-child>
+              <NuxtLink to="project.demo">Demo</NuxtLink>
+            </UiButton>
+          </UiCardFooter>
+        </UiCard>
       </li>
     </ul>
   </SectionContainer>
