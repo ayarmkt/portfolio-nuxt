@@ -13,6 +13,8 @@ const menuItems: { label: string; link: string }[] = [
     link: 'https://test.com',
   },
 ];
+
+const tag = resolveComponent('UiNavigationMenuLink');
 </script>
 
 <template>
@@ -26,12 +28,14 @@ const menuItems: { label: string; link: string }[] = [
         :key="index"
         class="h-full my-auto"
       >
-        <UiNavigationMenuLink
+        <Typo
+          :tag="tag"
+          variant="text-small"
           :href="menu.link"
           class="h-full justify-center hover:!bg-transparent"
         >
-          <Typo variant="text-small">{{ menu.label }}</Typo>
-        </UiNavigationMenuLink>
+          {{ menu.label }}
+        </Typo>
       </UiNavigationMenuItem>
     </UiNavigationMenuList>
   </UiNavigationMenu>
