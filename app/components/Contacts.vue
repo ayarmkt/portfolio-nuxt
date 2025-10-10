@@ -24,11 +24,11 @@ const links = [
         <NuxtLink :to="link.url" :aria-label="`Go to ${link.label}`">
           <font-awesome-icon
             :icon="`fa-brands ${link.class}`"
-            class="fa-2xl text-gray-600"
+            class="fa-2xl text-muted-foreground"
           />
         </NuxtLink>
       </li>
     </ul>
-    <div class="w-0.5 h-40 bg-gray-600 hidden md:block"></div>
+    <div class="w-0.5 h-40 bg-muted-foreground hidden md:block"></div>
   </div>
 </template>

@@ -49,7 +49,7 @@ const descTag = resolveComponent('UiCardDescription');
             <UiButton as-child>
               <NuxtLink to="project.github">GitHub</NuxtLink>
             </UiButton>
-            <UiButton as-child>
+            <UiButton variant="accent" as-child>
               <NuxtLink to="project.demo">Demo</NuxtLink>
             </UiButton>
           </UiCardFooter>

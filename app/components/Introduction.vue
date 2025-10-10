@@ -1,10 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <SectionContainer class="bg-gray-50">
+  <SectionContainer>
     <Typo tag="h2" variant="title-medium" class="pb-8 text-center">
       Hi, I'm
-      <Typo tag="span" variant="title-medium-blue">Aya</Typo>
+      <Typo tag="span" variant="title-medium" class="text-accent">Aya</Typo>
       !
     </Typo>
     <Typo tag="p" variant="text-medium" class="pb-4">
@@ -17,7 +17,7 @@
       expertise with my technical skills, I can push your business forward.
     </Typo>
 
-    <Typo tag="h3" variant="title-small" class="text-center mt-12">
+    <Typo tag="h3" variant="title-small" class="text-center mt-12 mb-4">
       Tech Skills
     </Typo>
     <Typo tag="p" variant="text-medium">
@@ -27,7 +27,7 @@
       Harum?
     </Typo>
 
-    <Typo tag="h3" variant="title-small" class="text-center mt-12">
+    <Typo tag="h3" variant="title-small" class="text-center mt-12 mb-4">
       More About Me
     </Typo>
     <Typo tag="p" variant="text-medium">

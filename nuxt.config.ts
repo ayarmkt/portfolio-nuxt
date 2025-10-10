@@ -17,11 +17,15 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@vueuse/nuxt', 'shadcn-nuxt'],
+  modules: ['@vueuse/nuxt', 'shadcn-nuxt', '@nuxtjs/color-mode'],
 
   shadcn: {
     prefix: 'Ui',
     componentDir: './components/ui',
+  },
+
+  colorMode: {
+    classSuffix: '',
   },
 
   devtools: { enabled: true },
