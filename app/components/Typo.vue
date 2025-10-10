@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import type { Component } from 'vue';
+
 const variantClasses = {
   'title-large': 'text-5xl md:text-8xl font-black',
   'title-medium': 'text-3xl md:text-4xl font-black',
@@ -14,7 +16,7 @@ const variantClasses = {
 
 const { tag = 'p', variant = 'text-medium' } = defineProps<{
   // Tag name
-  tag?: string;
+  tag?: string | Component;
   //   Variant
   variant?: keyof typeof variantClasses;
 }>();
