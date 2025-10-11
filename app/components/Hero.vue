@@ -7,7 +7,7 @@
         Aya Takamura
       </Typo>
       <Typo tag="p" variant="text-large" class="text-center">
-        <Typo tag="span" variant="text-large-bold" class="!text-accent">
+        <Typo tag="span" variant="text-large-bold" class="!text-primary">
           a Brand Marketer-turned-Front-End Developer
         </Typo>
         who cares about user experience. I am passionate about understanding
@@ -15,8 +15,8 @@
         easy-to-use applications.
       </Typo>
       <Contacts />
-      <UiButton variant="accent" as-child>
-        <NuxtLink to="test.com">View my CV</NuxtLink>
+      <UiButton as-child>
+        <NuxtLink to="https://test.com">View my CV</NuxtLink>
       </UiButton>
     </div>
   </section>

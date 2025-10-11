@@ -8,11 +8,6 @@ export const buttonVariants = cva(
   {
     variants: {
       variant: {
-        // Custom variants
-        accent:
-          'bg-accent text-accent-foreground shadow-xs hover:bg-accent/90 focus-visible:ring-accent/20 dark:focus-visible:ring-accent/40',
-
-        // Default Shadcn variants
         default:
           'bg-primary text-primary-foreground shadow-xs hover:bg-primary/90',
         destructive:

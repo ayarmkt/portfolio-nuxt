@@ -4,7 +4,7 @@
   <SectionContainer>
     <Typo tag="h2" variant="title-medium" class="pb-8 text-center">
       Hi, I'm
-      <Typo tag="span" variant="title-medium" class="text-accent">Aya</Typo>
+      <Typo tag="span" variant="title-medium" class="text-primary">Aya</Typo>
       !
     </Typo>
     <Typo tag="p" variant="text-medium" class="pb-4">

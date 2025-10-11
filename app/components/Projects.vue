@@ -3,14 +3,14 @@ const projects = [
   {
     title: 'title 1',
     text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expeditasapiente fugit doloribus vero eos ea accusamus iusto dolores nesciunt',
-    github: 'test.com',
-    demo: 'test.com',
+    github: 'https://test.com',
+    demo: 'https://test.com',
   },
   {
     title: 'title 2',
     text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expeditasapiente fugit doloribus vero eos ea accusamus iusto dolores nesciunt',
-    github: 'test.com',
-    demo: 'test.com',
+    github: 'https://test.com',
+    demo: 'https://test.com',
   },
 ];
 
@@ -46,11 +46,11 @@ const descTag = resolveComponent('UiCardDescription');
           </UiCardContent>
 
           <UiCardFooter class="justify-center gap-x-2">
-            <UiButton as-child>
-              <NuxtLink to="project.github">GitHub</NuxtLink>
+            <UiButton variant="outline" as-child>
+              <NuxtLink :to="project.github">GitHub</NuxtLink>
             </UiButton>
-            <UiButton variant="accent" as-child>
-              <NuxtLink to="project.demo">Demo</NuxtLink>
+            <UiButton as-child>
+              <NuxtLink :to="project.demo">Demo</NuxtLink>
             </UiButton>
           </UiCardFooter>
         </UiCard>
